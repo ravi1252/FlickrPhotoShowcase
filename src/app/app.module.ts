@@ -4,6 +4,7 @@ import { FormsModule }    from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { Router } from '@angular/router';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent }            from './app.component';
 import { AppRoutingModule }        from './app-routing.module';
@@ -17,6 +18,7 @@ import { ImagelistingComponent } from './imagelisting/imagelisting.component';
     BrowserAnimationsModule,
     FormsModule,
     AppRoutingModule,
+    HttpModule,
   ],
   declarations: [
     AppComponent,
