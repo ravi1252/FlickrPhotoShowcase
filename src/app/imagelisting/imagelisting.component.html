@@ -1,0 +1,30 @@
+<nav style="text-align: right;">
+    <a routerLink="/crisis-center" routerLinkActive="active">Grid view</a>
+    <a routerLink="/superheroes" routerLinkActive="active">List view</a>
+</nav>
+
+<!--<div *ngFor="let item of imageList | keyvalue">
+    {{ item.key }} - {{ item.value }}
+  </div>
+-->
+
+<!--
+<ul>
+    <li *ngFor="let imageItem of imageList['photos']['photo']">
+      <a>
+        <img src="{{ 'https://farm' + imageItem.farm + '.staticflickr.com/' + imageItem.server 
+        + '/' + imageItem.id + '_' + imageItem.secret + '.jpg' }}"/>
+      </a>
+    </li>
+</ul>
+-->
+
+<div *ngFor="let imageItem of imageList['photos']['photo']">
+    <a>
+        <img src="{{ 'https://farm' + imageItem.farm + '.staticflickr.com/' + imageItem.server 
+        + '/' + imageItem.id + '_' + imageItem.secret + '.jpg' }}"/>
+    </a>
+</div>
+
+<script>
+</script>
